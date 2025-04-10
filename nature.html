@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Documentary</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-out;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px;
+            margin: 0 20px;
+        }
+
+        h2 {
+            color: #00796b;
+            font-size: 2.5em;
+            line-height: 1.4;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            animation: slideUp 1s ease-out;
+        }
+
+        .image-container img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+
+        .info {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+            animation: fadeIn 2s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #00796b;
+            color: white;
+            font-size: 1em;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Media Query for small screens */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container img {
+                max-width: 90%;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nature Documentary: Wonders of the Wild</h1>
+        <p>Exploring the untamed beauty of the natural world</p>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Welcome to this documentary where we explore the fascinating world of nature. From breathtaking landscapes to rare animal encounters, this documentary takes you on a journey through some of the most incredible ecosystems on Earth. Join us as we witness the beauty of nature in its purest form, from the dense rainforests of the Amazon to the frozen tundras of the Arctic.</p>
+    </section>
+
+    <section>
+        <h2>Nature's Wonders</h2>
+        <div class="image-container">
+            <!-- Image placeholders: replace with actual image links -->
+            <img src="https://images.unsplash.com/photo-1520552159191-e28a1d9f0d7e?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A majestic lion in the savannah">
+            <img src="https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="A panoramic view of a lush green forest">
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Documentary Video</h2>
+        <div class="video-container" aria-label="Featured documentary video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/F0lowv3DyfI?si=anLc79T21eUY8MzS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>About the Documentary</h2>
+        <div class="info">
+            <p>This documentary captures the essence of our planet's wildlife and habitats. The team traveled to some of the most remote and beautiful locations on Earth to film rare animals and plants in their natural environments. From the sweeping grasslands of Africa to the lush rainforests of South America, every frame tells a story of the delicate balance of life on Earth.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why Protect Nature?</h2>
+        <div class="info">
+            <p>Our planet is facing unprecedented challenges, including climate change, habitat loss, and poaching. It is vital that we act now to protect these ecosystems and the incredible creatures that inhabit them. By safeguarding the natural world, we ensure that future generations can experience the beauty and wonder of our planet, just as we do today.</p>
+            <p>Our documentary aims to raise awareness about the importance of conservation efforts and inspire action toward a more sustainable future.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nature Documentary. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
